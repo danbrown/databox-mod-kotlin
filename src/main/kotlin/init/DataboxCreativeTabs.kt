@@ -20,7 +20,7 @@ class DataboxCreativeTabs {
     val DATABOX_TAB: RegistryObject<CreativeModeTab> =
       TABS.register("databox_tab") {
         CreativeModeTab.builder()
-          .icon() { ItemStack(DataboxItems.ADAMANTIUM_INGOT.get()) }
+          .icon() { ItemStack(DataboxItems.ADAMANTIUM_INGOT) }
           .title(Component.translatable("databox.databox_tab"))
           .displayItems(DATABOX_TAB_DISPLAY)
           .build()
@@ -30,17 +30,17 @@ class DataboxCreativeTabs {
     //  function to generate the display items for the creative tab
     private val DATABOX_TAB_DISPLAY: DisplayItemsGenerator =
       DisplayItemsGenerator { _, pOutput ->
-        pOutput.accept(DataboxItems.ADAMANTIUM_INGOT.get())
-        pOutput.accept(DataboxItems.ADAMANTIUM_FRAGMENT.get())
-        pOutput.accept(DataboxItems.CUSTOM_ITEM.get())
+        pOutput.accept(DataboxItems.ADAMANTIUM_INGOT)
+        pOutput.accept(DataboxItems.ADAMANTIUM_FRAGMENT)
+        pOutput.accept(DataboxItems.CUSTOM_ITEM)
 
-        pOutput.accept(DataboxBlocks.ADAMANTIUM_BLOCK.get())
-        pOutput.accept(DataboxBlocks.ADAMANTIUM_ORE.get())
-        pOutput.accept(DataboxBlocks.DEEPSLATE_ADAMANTIUM_ORE.get())
-        pOutput.accept(DataboxBlocks.ADAMANTIUM_DEBRIS.get())
+        pOutput.accept(DataboxBlocks.ADAMANTIUM_BLOCK)
+        pOutput.accept(DataboxBlocks.ADAMANTIUM_ORE)
+        pOutput.accept(DataboxBlocks.DEEPSLATE_ADAMANTIUM_ORE)
+        pOutput.accept(DataboxBlocks.ADAMANTIUM_DEBRIS)
 
-        pOutput.accept(DataboxBlocks.JUMP_BLOCK.get())
-        pOutput.accept(DataboxBlocks.CORE_BLOCK.get())
+        pOutput.accept(DataboxBlocks.JUMP_BLOCK)
+        pOutput.accept(DataboxBlocks.CORE_BLOCK)
       }
 
 

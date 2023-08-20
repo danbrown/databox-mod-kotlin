@@ -10,16 +10,7 @@ import net.minecraftforge.registries.RegistryObject
 
 class DataboxEnchantments {
   companion object {
-    val ENCHANTMENTS: DeferredRegister<Enchantment> =
-      DeferredRegister.create(ForgeRegistries.ENCHANTMENTS, DataboxMod.MOD_ID)
-
     @kotlin.jvm.JvmField
-    val BLINKING_STRIKE: RegistryObject<Enchantment> =
-      ENCHANTMENTS.register("blinking_strike") { BlinkingStrikeEnchantment() }
-
-    //  register
-    fun register(bus: IEventBus) {
-      ENCHANTMENTS.register(bus)
-    }
+    val BLINKING_STRIKE: Enchantment = BlinkingStrikeEnchantment()
   }
 }

@@ -13,7 +13,7 @@ import net.minecraft.world.phys.BlockHitResult
 
 class CoreBlock(properties: Properties) : Block(properties) {
   companion object {
-    private val lit = BooleanProperty.create("lit")
+    val lit: BooleanProperty = BooleanProperty.create("lit")
   }
 
   //
