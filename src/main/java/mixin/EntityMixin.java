@@ -12,4 +12,8 @@ public class EntityMixin {
     @Shadow
     public Level level;
 
+    public void setLevel(Level level) {
+        this.level = level;
+    }
+
 }

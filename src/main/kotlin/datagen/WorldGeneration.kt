@@ -16,6 +16,8 @@ class WorldGeneration(output: PackOutput?, registries: CompletableFuture<HolderL
   DatapackBuiltinEntriesProvider(output, registries, BUILDER, Set.of<String>(DataboxMod.MOD_ID)) {
   companion object {
     val BUILDER = RegistrySetBuilder()
-      .add<Biome>(Registries.BIOME, DataboxBiomes::bootstrap)
+      .add(Registries.BIOME) { ctx ->
+        DataboxBiomes.bootstrap(ctx)
+      }
   }
 }
