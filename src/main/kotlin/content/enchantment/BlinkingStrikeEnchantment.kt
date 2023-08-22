@@ -1,4 +1,4 @@
-package com.dannbrown.databox.enchantment
+package com.dannbrown.databox.content.enchantment
 
 import net.minecraft.world.entity.EquipmentSlot
 import net.minecraft.world.item.Item
@@ -12,7 +12,7 @@ import java.util.List
 
 class BlinkingStrikeEnchantment(vararg slots: EquipmentSlot?) :
   Enchantment(Rarity.RARE, EnchantmentCategory.TRIDENT, slots) {
-    
+
   override fun checkCompatibility(ench: Enchantment): Boolean {
     // allow enchantment to be combined with other enchantments, except for itself,
     // and riptide

@@ -7,7 +7,7 @@
       "above_bottom": 10
     },
     "probability": 0.5,
-    "replaceable": "#databox:undergarden_carver_replaceables",
+    "replaceable": "#databox:databox_carver_replaceables",
     "vertical_radius_multiplier": 1.0,
     "y": {
       "type": "minecraft:uniform",

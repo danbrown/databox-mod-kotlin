@@ -1,4 +1,4 @@
-package com.dannbrown.databox.block
+package com.dannbrown.databox.content.block
 
 import net.minecraft.core.BlockPos
 import net.minecraft.world.InteractionHand

@@ -45,7 +45,7 @@ public abstract class ThrownTridentMixin extends AbstractArrow {
         // if the world is not client side and the trident has not hit something yet
         if (!world.isClientSide() && !this.hitSomething && res.getEntity() instanceof LivingEntity target) {
             // check trident enchantments
-            if (tridentItem.getEnchantmentLevel(DataboxEnchantments.BLINKING_STRIKE) > 0) {
+            if (tridentItem.getEnchantmentLevel(DataboxEnchantments.BLINKING_STRIKE.get()) > 0) {
                 // check if the owner exists, it's not the target, and its on the same level of
                 // the trident and the target
                 if (owner != null && owner != target && owner.level() == target.level() && owner.level() == world) {
@@ -82,7 +82,7 @@ public abstract class ThrownTridentMixin extends AbstractArrow {
         // if the world is not client side and the trident has not hit something yet
         if (!world.isClientSide() && !this.hitSomething) {
             // check trident enchantments
-            if (tridentItem.getEnchantmentLevel(DataboxEnchantments.BLINKING_STRIKE) > 0) {
+            if (tridentItem.getEnchantmentLevel(DataboxEnchantments.BLINKING_STRIKE.get()) > 0) {
                 // check if the owner exists, it's on the same level of the trident
                 if (owner != null && owner.level() == world) {
 

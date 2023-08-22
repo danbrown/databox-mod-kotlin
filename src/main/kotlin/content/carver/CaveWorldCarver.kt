@@ -1,4 +1,4 @@
-package com.dannbrown.databox.world.carver
+package com.dannbrown.databox.content.carver
 
 import com.dannbrown.databox.init.DataboxBlocks
 import com.google.common.collect.ImmutableSet;
@@ -122,8 +122,8 @@ class CaveWorldCarver(configCodec: Codec<CaveCarverConfiguration?>?) : CaveWorld
   ): Boolean {
     val chunkState = chunk.getBlockState(pos)
     // TODO: Replace with Tuff variants
-    if (chunkState.`is`(DataboxBlocks.ADAMANTIUM_DEBRIS) || chunkState.`is`(DataboxBlocks.ADAMANTIUM_DEBRIS) || chunkState.`is`(
-        DataboxBlocks.ADAMANTIUM_DEBRIS
+    if (chunkState.`is`(DataboxBlocks.ADAMANTIUM_DEBRIS.get()) || chunkState.`is`(DataboxBlocks.ADAMANTIUM_DEBRIS.get()) || chunkState.`is`(
+        DataboxBlocks.ADAMANTIUM_DEBRIS.get()
       )
     ) {
       reachedSurface.setTrue()

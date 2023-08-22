@@ -1,6 +1,6 @@
-// 1.20	2023-08-22T07:53:44.452368	Registries
+// 1.20	2023-08-22T10:01:52.087307	Registries
 c9b057d98b171cc9633c97635ecb5df0955e96be data/databox/worldgen/biome/ancient_sea.json
-3096e3dc2fada06b69ac377a30b8437ac3226f2e data/databox/worldgen/biome/custom_biome_1.json
-9a8594bb484ca9019f0449d061a5400d64ab8654 data/databox/worldgen/configured_carver/undergarden_cave.json
+2b43f813f2f026b8cdaf3a01ed1594e138038d9f data/databox/worldgen/biome/custom_biome_1.json
+d14f584a9d3057665dda9e2de04313aec22a69fd data/databox/worldgen/configured_carver/undergarden_cave.json
 5c84edb5cd948ea9224b8ca8a5eec7805943dcff data/databox/worldgen/configured_feature/adamantium_ore.json
-17ca4725d230d84e7ce7d82dee4beb468baab68c data/databox/worldgen/placed_feature/adamantium_ore.json
+cd1fe9f9d5a672bd44b977ebea8214718521479a data/databox/worldgen/placed_feature/adamantium_ore.json

@@ -179,3 +179,14 @@ tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach 
     jvmTarget = "17"
   }
 }
+
+tasks {
+  val runDataClient by registering {
+    dependsOn(named("runData"), named("runClient"))
+
+    doLast {
+      // This block will run after both runData and runClient tasks are complete
+      println("Custom task runDataClient completed.")
+    }
+  }
+}

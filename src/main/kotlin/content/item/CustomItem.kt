@@ -1,4 +1,4 @@
-package com.dannbrown.databox.item
+package com.dannbrown.databox.content.item
 
 import net.minecraft.ChatFormatting
 import net.minecraft.client.gui.screens.Screen
